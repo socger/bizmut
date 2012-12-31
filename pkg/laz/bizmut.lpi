@@ -29,22 +29,28 @@
         <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="5">
+    <RequiredPackages Count="7">
       <Item1>
-        <PackageName Value="AbstractCoreRT"/>
+        <PackageName Value="PressLazCoreRT"/>
       </Item1>
       <Item2>
-        <PackageName Value="AbstractUserRT"/>
+        <PackageName Value="PressLazSQLdbRT"/>
       </Item2>
       <Item3>
-        <PackageName Value="AbstractOPFSQLdbRT"/>
+        <PackageName Value="PressLazReportRT"/>
       </Item3>
       <Item4>
-        <PackageName Value="PressLazReportRT"/>
+        <PackageName Value="AbstractCoreRT"/>
       </Item4>
       <Item5>
-        <PackageName Value="LCL"/>
+        <PackageName Value="AbstractUserRT"/>
       </Item5>
+      <Item6>
+        <PackageName Value="AbstractOPFSQLdbRT"/>
+      </Item6>
+      <Item7>
+        <PackageName Value="LCL"/>
+      </Item7>
     </RequiredPackages>
     <Units Count="14">
       <Unit0>
@@ -53,77 +59,77 @@
         <UnitName Value="bizmut"/>
       </Unit0>
       <Unit1>
-        <Filename Value="src/main/lclvcl/MainFrm.pas"/>
+        <Filename Value="../../src/main/lclvcl/MainFrm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MainForm"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MainFrm"/>
       </Unit1>
       <Unit2>
-        <Filename Value="src/main/MainMVP.pas"/>
+        <Filename Value="../../src/main/MainMVP.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="MainMVP"/>
       </Unit2>
       <Unit3>
-        <Filename Value="src/main/Brokers.pas"/>
+        <Filename Value="../../src/main/Brokers.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Brokers"/>
       </Unit3>
       <Unit4>
-        <Filename Value="src/main/Users.pas"/>
+        <Filename Value="../../src/main/Users.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Users"/>
       </Unit4>
       <Unit5>
-        <Filename Value="src/lanc/lclvcl/LancamentoEditFrm.pas"/>
+        <Filename Value="../../src/lanc/lclvcl/LancamentoEditFrm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="LancamentoEditForm"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LancamentoEditFrm"/>
       </Unit5>
       <Unit6>
-        <Filename Value="src/lanc/LancMVP.pas"/>
+        <Filename Value="../../src/lanc/LancMVP.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LancMVP"/>
       </Unit6>
       <Unit7>
-        <Filename Value="src/lanc/LancBO.pas"/>
+        <Filename Value="../../src/lanc/LancBO.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LancBO"/>
       </Unit7>
       <Unit8>
-        <Filename Value="src/lanc/FornBO.pas"/>
+        <Filename Value="../../src/lanc/FornBO.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="FornBO"/>
       </Unit8>
       <Unit9>
-        <Filename Value="src/conta/ContaBO.pas"/>
+        <Filename Value="../../src/conta/ContaBO.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="ContaBO"/>
       </Unit9>
       <Unit10>
-        <Filename Value="src/lanc/lclvcl/LancItemEditFrm.pas"/>
+        <Filename Value="../../src/lanc/lclvcl/LancItemEditFrm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="LancItemEditForm"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LancItemEditFrm"/>
       </Unit10>
       <Unit11>
-        <Filename Value="src/lanc/lclvcl/LancItemDespesaEditFrm.pas"/>
+        <Filename Value="../../src/lanc/lclvcl/LancItemDespesaEditFrm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="LancItemDespesaEditForm"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LancItemDespesaEditFrm"/>
       </Unit11>
       <Unit12>
-        <Filename Value="src/lanc/lclvcl/LancItemReceitaEditFrm.pas"/>
+        <Filename Value="../../src/lanc/lclvcl/LancItemReceitaEditFrm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="LancItemReceitaEditForm"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LancItemReceitaEditFrm"/>
       </Unit12>
       <Unit13>
-        <Filename Value="src/lanc/lclvcl/MembroFamiliaEditFrm.pas"/>
+        <Filename Value="../../src/lanc/lclvcl/MembroFamiliaEditFrm.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="MembroFamiliaEditForm"/>
         <HasResources Value="True"/>
@@ -134,14 +140,13 @@
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
-    <PathDelim Value="\"/>
     <Target>
       <Filename Value="bizmut"/>
     </Target>
     <SearchPaths>
-      <IncludeFiles Value="src;$(ProjOutDir)"/>
-      <OtherUnitFiles Value="src\main;src\main\lclvcl;src\lanc;src\lanc\lclvcl;src\conta;src\conta\lclvcl"/>
-      <UnitOutputDirectory Value="bin\laz\$(TargetCPU)-$(TargetOS)"/>
+      <IncludeFiles Value="../../src;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="../../src/main;../../src/main/lclvcl;../../src/lanc;../../src/lanc/lclvcl;../../src/conta;../../src/conta/lclvcl"/>
+      <UnitOutputDirectory Value="../../bin/laz/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
       <Debugging>
