@@ -1,0 +1,56 @@
+inherited LancItemDespesaEditForm: TLancItemDespesaEditForm
+  Height = 164
+  Width = 356
+  Caption = 'Item de Despesa'
+  ClientHeight = 164
+  ClientWidth = 356
+  inherited BottomPanel: TPanel
+    Top = 125
+    Width = 356
+    ClientWidth = 356
+    inherited LinePanel: TPanel
+      Width = 356
+    end
+    inherited GravarButton: TButton
+      Left = 194
+    end
+    inherited FecharButton: TButton
+      Left = 274
+    end
+  end
+  inherited ClientPanel: TPanel
+    Height = 125
+    Width = 356
+    ClientHeight = 125
+    ClientWidth = 356
+    inherited ContaComboBox: TComboBox
+      Width = 304
+    end
+    inherited ValorLabel: TLabel
+      Left = 24
+      Top = 64
+    end
+    inherited ValorEdit: TEdit
+      Left = 24
+      Top = 80
+    end
+    object MembroFamiliaLabel: TLabel[4]
+      Left = 112
+      Height = 14
+      Top = 64
+      Width = 94
+      Caption = 'Membro da Família:'
+      FocusControl = MembroFamiliaComboBox
+      ParentColor = False
+    end
+    object MembroFamiliaComboBox: TComboBox[5]
+      Left = 112
+      Height = 21
+      Top = 80
+      Width = 216
+      ItemHeight = 13
+      TabOrder = 2
+      Text = 'ContaComboBox'
+    end
+  end
+end

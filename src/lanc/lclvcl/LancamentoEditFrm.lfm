@@ -1,0 +1,123 @@
+inherited LancamentoEditForm: TLancamentoEditForm
+  Left = 193
+  Top = 120
+  Width = 816
+  Caption = 'Lançamento'
+  ClientWidth = 816
+  inherited BottomPanel: TPanel
+    Width = 816
+    ClientWidth = 816
+    inherited LinePanel: TPanel
+      Width = 816
+    end
+    inherited GravarButton: TButton
+      Left = 654
+    end
+    inherited FecharButton: TButton
+      Left = 734
+    end
+  end
+  inherited ClientPanel: TPanel
+    Width = 816
+    ClientWidth = 816
+    object DataLabel: TLabel[0]
+      Left = 16
+      Height = 14
+      Top = 16
+      Width = 27
+      Caption = 'Data:'
+      FocusControl = DataEdit
+      ParentColor = False
+    end
+    object FornecedorLabel: TLabel[1]
+      Left = 168
+      Height = 14
+      Top = 16
+      Width = 58
+      Caption = 'Fornecedor:'
+      FocusControl = FornecedorComboBox
+      ParentColor = False
+    end
+    object DescricaoLabel: TLabel[2]
+      Left = 416
+      Height = 14
+      Top = 16
+      Width = 52
+      Caption = 'Descrição:'
+      FocusControl = DescricaoEdit
+      ParentColor = False
+    end
+    object DespesasLabel: TLabel[3]
+      Left = 16
+      Height = 14
+      Top = 64
+      Width = 149
+      Caption = 'Despesas e entradas em caixa:'
+      FocusControl = DespesasStringGrid
+      ParentColor = False
+    end
+    object ReceitasLabel: TLabel[4]
+      Left = 416
+      Height = 14
+      Top = 64
+      Width = 128
+      Caption = 'Receitas e saída de caixa:'
+      FocusControl = ReceitasStringGrid
+      ParentColor = False
+    end
+    object DataEdit: TEdit[5]
+      Left = 16
+      Height = 21
+      Top = 32
+      Width = 136
+      TabOrder = 0
+    end
+    object FornecedorComboBox: TComboBox[6]
+      Left = 168
+      Height = 21
+      Top = 32
+      Width = 232
+      ItemHeight = 13
+      TabOrder = 1
+    end
+    object DescricaoEdit: TEdit[7]
+      Left = 416
+      Height = 21
+      Top = 32
+      Width = 384
+      TabOrder = 2
+    end
+    object DespesasStringGrid: TStringGrid[8]
+      Left = 16
+      Height = 120
+      Top = 80
+      Width = 384
+      TabOrder = 3
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+    end
+    object ReceitasStringGrid: TStringGrid[9]
+      Left = 416
+      Height = 120
+      Top = 80
+      Width = 384
+      TabOrder = 4
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+    end
+    object DespesasTotalEdit: TEdit[10]
+      Left = 301
+      Height = 21
+      Top = 208
+      Width = 99
+      TabOrder = 5
+    end
+    object ReceitasTotalEdit: TEdit[11]
+      Left = 696
+      Height = 21
+      Top = 208
+      Width = 104
+      TabOrder = 6
+    end
+  end
+end

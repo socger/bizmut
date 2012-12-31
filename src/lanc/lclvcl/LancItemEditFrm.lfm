@@ -1,0 +1,64 @@
+inherited LancItemEditForm: TLancItemEditForm
+  Left = 287
+  Height = 113
+  Top = 188
+  Width = 339
+  Caption = 'Item de Lançamento'
+  ClientHeight = 113
+  ClientWidth = 339
+  inherited BottomPanel: TPanel
+    Top = 74
+    Width = 339
+    ClientWidth = 339
+    inherited LinePanel: TPanel
+      Width = 339
+    end
+    inherited GravarButton: TButton
+      Left = 177
+    end
+    inherited FecharButton: TButton
+      Left = 257
+    end
+  end
+  inherited ClientPanel: TPanel
+    Height = 74
+    Width = 339
+    ClientHeight = 74
+    ClientWidth = 339
+    object ContaLabel: TLabel[0]
+      Left = 24
+      Height = 14
+      Top = 16
+      Width = 32
+      Caption = 'Conta:'
+      FocusControl = ContaComboBox
+      ParentColor = False
+    end
+    object ContaComboBox: TComboBox[1]
+      Left = 24
+      Height = 21
+      Top = 33
+      Width = 200
+      ItemHeight = 13
+      TabOrder = 0
+      Text = 'ContaComboBox'
+    end
+    object ValorLabel: TLabel[2]
+      Left = 235
+      Height = 14
+      Top = 16
+      Width = 28
+      Caption = 'Valor:'
+      FocusControl = ValorEdit
+      ParentColor = False
+    end
+    object ValorEdit: TEdit[3]
+      Left = 235
+      Height = 21
+      Top = 33
+      Width = 80
+      TabOrder = 1
+      Text = 'ValorEdit'
+    end
+  end
+end

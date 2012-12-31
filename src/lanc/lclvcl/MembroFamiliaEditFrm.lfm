@@ -1,0 +1,8 @@
+inherited MembroFamiliaEditForm: TMembroFamiliaEditForm
+  Caption = 'Membro da Família'
+  inherited ClientPanel: TPanel
+    inherited NomeGroupBox: TGroupBox
+      Caption = 'Membro da Família'
+    end
+  end
+end

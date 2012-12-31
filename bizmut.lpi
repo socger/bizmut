@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="5">
+      <Item1>
+        <PackageName Value="AbstractCoreRT"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="AbstractUserRT"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="AbstractOPFSQLdbRT"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="PressLazReportRT"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+    </RequiredPackages>
+    <Units Count="14">
+      <Unit0>
+        <Filename Value="bizmut.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="bizmut"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="src/main/lclvcl/MainFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MainFrm"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="src/main/MainMVP.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MainMVP"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="src/main/Brokers.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Brokers"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="src/main/Users.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Users"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="src/lanc/lclvcl/LancamentoEditFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LancamentoEditForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LancamentoEditFrm"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="src/lanc/LancMVP.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LancMVP"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="src/lanc/LancBO.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LancBO"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="src/lanc/FornBO.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FornBO"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="src/conta/ContaBO.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ContaBO"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="src/lanc/lclvcl/LancItemEditFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LancItemEditForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LancItemEditFrm"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="src/lanc/lclvcl/LancItemDespesaEditFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LancItemDespesaEditForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LancItemDespesaEditFrm"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="src/lanc/lclvcl/LancItemReceitaEditFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LancItemReceitaEditForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LancItemReceitaEditFrm"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="src/lanc/lclvcl/MembroFamiliaEditFrm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MembroFamiliaEditForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MembroFamiliaEditFrm"/>
+      </Unit13>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="bizmut"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="src;$(ProjOutDir)"/>
+      <OtherUnitFiles Value="src\main;src\main\lclvcl;src\lanc;src\lanc\lclvcl;src\conta;src\conta\lclvcl"/>
+      <UnitOutputDirectory Value="bin\laz\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,3 @@
+inherited LancItemReceitaEditForm: TLancItemReceitaEditForm
+  Caption = 'Item de Receita'
+end

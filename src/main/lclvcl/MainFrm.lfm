@@ -1,0 +1,70 @@
+object MainForm: TMainForm
+  Left = 296
+  Height = 89
+  Top = 155
+  Width = 322
+  Caption = 'Bizmut'
+  Menu = MainMenu
+  object MainMenu: TMainMenu
+    left = 24
+    top = 8
+    object ArquivoMenuGroup: TMenuItem
+      Caption = 'Arquivo'
+      object UsuarioMenuItem: TMenuItem
+        Caption = 'Usuários'
+      end
+      object GrupoUsuarioMenuItem: TMenuItem
+        Caption = 'Grupos de usuário'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object MetadataMenuItem: TMenuItem
+        Caption = 'Metadata...'
+      end
+      object LogoffMenuItem: TMenuItem
+        Caption = 'Desconectar'
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object SairMenuItem: TMenuItem
+        Caption = 'Sair'
+      end
+    end
+    object LancMenuGroup: TMenuItem
+      Caption = 'Lançamento'
+      object LancIncMenuItem: TMenuItem
+        Caption = 'Incluir Lançamento'
+      end
+      object LancConsMenuItem: TMenuItem
+        Caption = 'Consultar Lançamento'
+      end
+    end
+    object ContaMenuGroup: TMenuItem
+      Caption = 'Conta'
+      object ContaConsMenuItem: TMenuItem
+        Caption = 'Consultar Conta'
+      end
+    end
+  end
+  object MainMenuLogoff: TMainMenu
+    left = 120
+    top = 8
+    object ArquivoLogoffMenuGroup: TMenuItem
+      Caption = 'Arquivo'
+      object LogonMenuItem: TMenuItem
+        Caption = 'Conectar...'
+      end
+      object MetadataMenuItemLogoff: TMenuItem
+        Caption = 'Metadata...'
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object SairLogoffMenuItem: TMenuItem
+        Caption = 'Sair'
+      end
+    end
+  end
+end
